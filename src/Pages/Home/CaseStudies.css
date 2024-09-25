@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .case-studies {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .case-studies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .case-study {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 8px;
+    position: relative;
+    padding: 20px;
+  }
+  
+  .case-study .content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .case-study h3 {
+    font-size: 18px;
+  }
+  
+  .case-study h2 {
+    font-size: 24px;
+  }
+  
+  .case-study p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .case-study button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .case-study button:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+  }
+  
+  .join-us-section {
+    /* background-image: url('path/to/your/image'); */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .join-us-section .content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .join-us-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .join-us-section p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .join-us-section button {
+    background-color: orange;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .join-us-section button:hover {
+    background-color: darkorange;
+    transition: all 0.3s ease;
+  }
+  
+  /* RESPONSIVE STYLES */
+  
+  @media screen and (max-width: 1200px) {
+    .case-studies-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .case-studies-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .join-us-section {
+      height: auto;
+    }
+  }
+  
