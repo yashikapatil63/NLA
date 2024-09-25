@@ -5,8 +5,7 @@ import '../../global.css';
 import { Link } from 'react-router-dom';
 import facebookIcon from '../../Assets/Components/facebook.png';
 import twitterIcon from '../../Assets/Components/twitter.png';
-import linkedinIcon from '../../Assets/Components/linkedin.png'
-
+import linkedinIcon from '../../Assets/Components/linkedin.png';
 
 const Footer = () => {
   return (
@@ -41,24 +40,25 @@ const Footer = () => {
         <div className="more">
           <h3>Explore</h3>
           <ul>
-            <li><Link to="/About"  className="email-link">About Us</Link></li>
-            <li><Link to="/Services"  className="email-link">Services</Link></li>
-            <li><Link to="/Contact"  className="email-link">Contact Us</Link></li>
-            <li><Link to="/Blogs"  className="email-link">Blogs</Link></li>
+            <li><Link to="/About" className="email-link">About Us</Link></li>
+            <li><Link to="/Services" className="email-link">Services</Link></li>
+            <li><Link to="/Contact" className="email-link">Contact Us</Link></li>
+            <li><Link to="/Blogs" className="email-link">Blogs</Link></li>
           </ul>
         </div>
         <div className="policies">
           <h3>Our Policies</h3>
           <ul>
-            <li><Link to="/PrivacyPolicy"   className="email-link">Privacy Policies</Link></li>
-            <li><Link to="/TermsConditions"  className="email-link">Terms & Conditions</Link></li>
+            <li><Link to="/PrivacyPolicy" className="email-link">Privacy Policies</Link></li>
+            <li><Link to="/TermsConditions" className="email-link">Terms & Conditions</Link></li>
           </ul>
         </div>
       </div>
+      <div className="footer-bottom">
         <div className="footer-social">
-        <a><img src={facebookIcon} alt="LinkedIn" /></a>
-          <a><img src={twitterIcon} alt="X" className="email-link"/></a>
-          <a><img src={linkedinIcon} alt="Facebook" /></a>
+          <a href="#"><img src={facebookIcon} alt="Facebook" /></a>
+          <a href="#"><img src={twitterIcon} alt="X" className="email-link" /></a>
+          <a href="#"><img src={linkedinIcon} alt="LinkedIn" /></a>
         </div>
       </div>
     </footer>
