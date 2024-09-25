@@ -55,11 +55,10 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="footer-bottom">
         <div className="footer-social">
-        <a href="#"><img src={facebookIcon} alt="LinkedIn" /></a>
-          <a href="#"><img src={twitterIcon} alt="X" className="email-link"/></a>
-          <a href="#"><img src={linkedinIcon} alt="Facebook" /></a>
+        <a><img src={facebookIcon} alt="LinkedIn" /></a>
+          <a><img src={twitterIcon} alt="X" className="email-link"/></a>
+          <a><img src={linkedinIcon} alt="Facebook" /></a>
         </div>
       </div>
     </footer>
